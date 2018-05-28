@@ -1,8 +1,17 @@
 // IMPORT OBJECTS AND METHODS
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+// IMPORT ACTION CREATOR
+import { fetchPosts } from '../actions';
 
 // CREATE POSTSINDEX CLASS COMPONENT
 class PostsIndex extends Component {
+	// METHOD TO RUN WHENEVER THE COMPONENT IS RENDERED TO THE DOM
+	componentDidMount() {
+		this.props.fetchPosts();
+	}
+
+	// REACT RENDOR METHOD
 	render() {
 		return (
 			<div>
@@ -13,4 +22,5 @@ class PostsIndex extends Component {
 }
 
 // EXPORT POSTSINDEX COMPONENT
-export default PostsIndex;
+// ATTACH ACTION CREATOR WITH PROPS TO COMPONENT
+export default connect(null, { fetchPosts })(PostsIndex);
