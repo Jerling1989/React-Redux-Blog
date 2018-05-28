@@ -1,5 +1,7 @@
+// IMPORT OBJECTS AND METHODS
 import React, { Component } from 'react';
 
+// CREATE POSTSNEW CLASS COMPONENT
 class PostsNew extends Component {
 	render() {
 		return (
@@ -10,4 +12,5 @@ class PostsNew extends Component {
 	}
 }
 
+// EXPORT POSTSNEW COMPONENT
 export default PostsNew;
