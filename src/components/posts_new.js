@@ -4,7 +4,17 @@ import { Field, reduxForm } from 'redux-form';
 
 // CREATE POSTSNEW CLASS COMPONENT
 class PostsNew extends Component {
-
+	// RENDERTITLEFIELD HELPER FUNCTION
+	renderTitleField(field) {
+		return (
+			<div>
+				<input
+					type="text"
+					{...field.input}
+				/>
+			</div>
+		);
+	}
 
 	// REACT RENDER METHOD
 	render() {
@@ -12,7 +22,7 @@ class PostsNew extends Component {
 			<form>
 				<Field
 					name="title"
-					component={}
+					component={this.renderTitleField}
 				/>
 			</form>
 		);
