@@ -19,7 +19,7 @@ class PostsIndex extends Component {
 			return (
 				<li className="list-group-item" key={post.id}>
 					<Link to={`/posts/${post.id}`}>
-						{post.title}
+						{post.title} | {post.content.substring(0, 44)}...
 					</Link>
 				</li>
 			);
@@ -35,7 +35,7 @@ class PostsIndex extends Component {
 					</Link>
 				</div>
 				<h3>Posts</h3>
-				<ul className="list-group">
+				<ul className="list-group-flush">
 					{this.renderPosts()}
 				</ul>
 			</div>

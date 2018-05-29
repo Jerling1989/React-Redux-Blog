@@ -1,3 +1,8 @@
 form a {
 	margin-left: 10px;
 }
+
+.list-group-flush {
+	margin-right: auto;
+	margin-left: auto;
+}
