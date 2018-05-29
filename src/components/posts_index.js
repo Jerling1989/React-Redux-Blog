@@ -30,7 +30,7 @@ class PostsIndex extends Component {
 		return (
 			<div>
 				<div className="text-xs-right">
-					<Link className="btn-floating btn-large waves-effect waves-light red" to="/posts/new">
+					<Link className="btn-floating btn-large waves-effect waves-light teal" to="/posts/new">
 						<i className="material-icons">add</i>
 					</Link>
 				</div>

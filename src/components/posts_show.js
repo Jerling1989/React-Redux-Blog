@@ -32,10 +32,10 @@ class PostsShow extends Component {
 			<div>
 				<Link to="/">Back to Index</Link>
 				<button
-					className="btn btn-danger pull-xs-right"
+					className="btn-floating btn-large waves-effect waves-light red"
 					onClick={this.onDeleteClick.bind(this)}
 				>
-					Delete Post
+					<i className="material-icons">delete</i>
 				</button>
 				<h3>{post.title}</h3>
 				<h6>Categories: {post.categories}</h6>
