@@ -18,12 +18,19 @@ class PostsNew extends Component {
 			</div>
 		);
 	}
+	// ONSUBMIT FUNCTION
+	onSubmit(values) {
+		console.log(values);
+	}
 	// REACT RENDER METHOD
 	render() {
+		// GET HANDLESUBMIT PROP THAT'S PASSED TO COMPONENT FROM REDUX FORM
+		const { handleSubmit } = this.props;
+
 		return (
-			<form>
+			<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 				<Field
-					label="Title"
+					label="Post Title"
 					name="title"
 					component={this.renderField}
 				/>
@@ -37,6 +44,7 @@ class PostsNew extends Component {
 					name="content"
 					component={this.renderField}
 				/>
+				<button type="submit" className="btn btn-primary">Submit</button>
 			</form>
 		);
 	}
