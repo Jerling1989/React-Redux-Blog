@@ -53,18 +53,3 @@ function mapStateToProps({ posts }, ownProps) {
 
 // EXPORT POSTSSHOW COMPONENT
 export default connect(mapStateToProps, { fetchPost, deletePost })(PostsShow);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
