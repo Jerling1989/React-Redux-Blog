@@ -42,7 +42,7 @@ class PostsNew extends Component {
 		const { handleSubmit } = this.props;
 
 		return (
-			<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+			<form autocomplete="off" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 				<Field
 					label="Post Title"
 					name="title"

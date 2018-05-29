@@ -30,8 +30,8 @@ class PostsIndex extends Component {
 		return (
 			<div>
 				<div className="text-xs-right">
-					<Link className="btn btn-primary" to="/posts/new">
-						Add a Post
+					<Link className="btn-floating btn-large waves-effect waves-light red" to="/posts/new">
+						<i className="material-icons">add</i>
 					</Link>
 				</div>
 				<h3>Posts</h3>
