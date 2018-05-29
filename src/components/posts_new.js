@@ -16,11 +16,10 @@ class PostsNew extends Component {
 			<div className="input-field">
 				<i className="material-icons prefix">{field.icon}</i>
 				<input
-					className="form-control"
+					placeholder={field.label}
 					type="text"
 					{...field.input}
 				/>
-				<label>{field.label}</label>
 				{/* TURNARY OPERATOR FOR ERROR DISPLAY */}
 				<div className="red-text">
 					{touched ? error : ''}
@@ -94,17 +93,3 @@ export default reduxForm({
 })(
 	connect(null, { createPost })(PostsNew)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
