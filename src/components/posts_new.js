@@ -11,19 +11,18 @@ class PostsNew extends Component {
 	// RENDERFIELD HELPER FUNCTION
 	renderField(field) {
 		const { meta: { touched, error } } = field;
-		// CLASSNAME VARIABLE WITH TURNARY OPERATE FOR FORM FIELD OUTLINE COLOR
-		const className = `form-group ${touched && error ? 'has-danger' : ''}`;
 
 		return (
-			<div className={className}>
-				<label>{field.label}</label>
+			<div className="input-field">
+				<i className="material-icons prefix">{field.icon}</i>
 				<input
 					className="form-control"
 					type="text"
 					{...field.input}
 				/>
+				<label>{field.label}</label>
 				{/* TURNARY OPERATOR FOR ERROR DISPLAY */}
-				<div className="text-help">
+				<div className="red-text">
 					{touched ? error : ''}
 				</div>
 			</div>
@@ -44,16 +43,19 @@ class PostsNew extends Component {
 		return (
 			<form autocomplete="off" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 				<Field
+					icon="title"
 					label="Post Title"
 					name="title"
 					component={this.renderField}
 				/>
 				<Field
+					icon="label"
 					label="Categories"
 					name="categories"
 					component={this.renderField}
 				/>
 				<Field
+					icon="subject"
 					label="Post Content"
 					name="content"
 					component={this.renderField}
