@@ -6,8 +6,12 @@ import { Field, reduxForm } from 'redux-form';
 class PostsNew extends Component {
 	// RENDERFIELD HELPER FUNCTION
 	renderField(field) {
+		const { meta: { touched, error } } = field;
+		// CLASSNAME VARIABLE WITH TURNARY OPERATE FOR FORM FIELD OUTLINE COLOR
+		const className = `form-group ${touched && error ? 'has-danger' : ''}`;
+
 		return (
-			<div className="form-group">
+			<div className={className}>
 				<label>{field.label}</label>
 				<input
 					className="form-control"
@@ -15,7 +19,9 @@ class PostsNew extends Component {
 					{...field.input}
 				/>
 				{/* TURNARY OPERATOR FOR ERROR DISPLAY */}
-				{field.meta.touched ? field.meta.error : ''}
+				<div className="text-help">
+					{touched ? error : ''}
+				</div>
 			</div>
 		);
 	}
