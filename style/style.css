@@ -8,3 +8,28 @@ form a {
 	right: 15px;
 	z-index: 2;
 }
+
+.blog-header {
+	background-image: url('../icons/header.jpg');
+	background-position: bottom center; 
+	background-size: 1200px 400px;
+	background-repeat: no-repeat;
+	margin-top: -42px;
+	height: 250px;
+}
+
+.blog-header h1 {
+	font-family: 'Audiowide', cursive;
+}
+
+.blog-header .react{
+	color: #0AD4FE;
+}
+
+.blog-header .redux{
+	color: #6B41B4;
+}
+
+.blog-header .blog{
+	color: #FFFFFF;
+}

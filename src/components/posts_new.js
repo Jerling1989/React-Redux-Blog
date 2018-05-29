@@ -11,7 +11,7 @@ class PostsNew extends Component {
 	// RENDERFIELD HELPER FUNCTION
 	renderField(field) {
 		const { meta: { touched, error } } = field;
-
+		// RETURN
 		return (
 			<div className="input-field">
 				<i className="material-icons prefix">{field.icon}</i>
