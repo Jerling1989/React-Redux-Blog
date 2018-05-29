@@ -20,9 +20,11 @@ export function fetchPosts() {
 }
 
 // CREATEPOST ACTION CREATOR
-export function createPost(values) {
+export function createPost(values, callback) {
 	// USE AXIOS FOR AJAX POST REQUEST
-	const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, values);
+	const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, values)
+	// TRIGGER CALLBACK FUNCTION TO GO TO ROOT AFTER POST COMPLETES
+	.then(() => callback());
 	// RETURN ACTION OBJECT WITH TYPE AND REQUEST PROMISE AS PAYLOAD
 	return {
 		type: CREATE_POST,

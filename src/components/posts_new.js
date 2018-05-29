@@ -31,7 +31,10 @@ class PostsNew extends Component {
 	}
 	// ONSUBMIT FUNCTION
 	onSubmit(values) {
-		this.props.createPost(values);
+		// RUN CREATEPOST ACTION CREATOR WITH CALLBACK FUNCTION TO NAVIGATE TO HOME PAGE
+		this.props.createPost(values, () => {
+			this.props.history.push('/');
+		});
 	}
 	// REACT RENDER METHOD
 	render() {
