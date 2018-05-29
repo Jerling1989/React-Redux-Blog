@@ -19,7 +19,7 @@ class PostsIndex extends Component {
 			return (
 				<div className="col s12 m6" key={post.id}>
 					<Link to={`/posts/${post.id}`}>
-						<div class="card blue-grey darken-1">
+						<div class="card blue-grey darken-1 z-depth-3">
 			        <div class="card-content white-text">
 			          <span class="card-title">{post.title}</span>
 			          <p>{post.content.substring(0, 44)}...</p>

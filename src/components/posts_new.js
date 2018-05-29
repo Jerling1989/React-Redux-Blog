@@ -27,6 +27,26 @@ class PostsNew extends Component {
 			</div>
 		);
 	}
+
+	renderTextarea(field) {
+		const { meta: { touched, error } } = field;
+		// RETURN
+		return (
+			<div className="input-field">
+				<i className="material-icons prefix">{field.icon}</i>
+				<textarea
+					className="materialize-textarea"
+					placeholder={field.label}
+					type="text"
+					{...field.input}
+				></textarea>
+				{/* TURNARY OPERATOR FOR ERROR DISPLAY */}
+				<div className="red-text">
+					{touched ? error : ''}
+				</div>
+			</div>
+		);
+	}
 	// ONSUBMIT FUNCTION
 	onSubmit(values) {
 		// RUN CREATEPOST ACTION CREATOR WITH CALLBACK FUNCTION TO NAVIGATE TO HOME PAGE
@@ -40,7 +60,8 @@ class PostsNew extends Component {
 		const { handleSubmit } = this.props;
 
 		return (
-			<form autocomplete="off" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+			<form autoComplete="off" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+			<h3 className="center-align">Create New Post</h3>
 				<Field
 					icon="title"
 					label="Post Title"
@@ -57,7 +78,7 @@ class PostsNew extends Component {
 					icon="subject"
 					label="Post Content"
 					name="content"
-					component={this.renderField}
+					component={this.renderTextarea}
 				/>
 				<button type="submit" className="waves-effect waves-light btn teal">Submit</button>
 				<Link to="/" className="waves-effect waves-light btn red">Cancel</Link>

@@ -30,15 +30,16 @@ class PostsShow extends Component {
 		// RETURN
 		return (
 			<div>
-				<Link to="/">Back to Index</Link>
+				<Link to="/"><h6>Back to Index</h6></Link>
 				<button
 					className="btn-floating btn-large waves-effect waves-light red"
 					onClick={this.onDeleteClick.bind(this)}
 				>
 					<i className="material-icons">delete</i>
 				</button>
-				<h3>{post.title}</h3>
-				<h6>Categories: {post.categories}</h6>
+				<h3 className="center-align">{post.title}</h3>
+				<h5>Categories: {post.categories}</h5>
+				<br />
 				<p>{post.content}</p>
 			</div>
 		);
