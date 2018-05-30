@@ -7,6 +7,6 @@ This is a Single-Page Application (SPA) using the MERN stack (MongoDB, Express, 
 ![HOME PAGE](/read_me/1-home.png)
 
 - TWO
-
+![CREATE POST](/read_me/2-new-post.png)
 
 - THREE
