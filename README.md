@@ -3,10 +3,10 @@ This is a Single-Page Application (SPA) using the MERN stack (MongoDB, Express, 
 
 ---
 
-- When the user first navigates to the application they will be directed to the home page. Here there are display cards for each of the posts on the blog with the title displayed as well as a few preview characters of the post. From this page the user can either click on one of the cards to be redirected to the specific post page, or they can click on the round button on the bottom right corner of the page to open up a form to create a new post.
+- When the user first navigates to the application they will be directed to the home page. Here there are info cards for each of the posts on the blog with the title displayed as well as a few preview characters of the post. From this page the user can either click on one of the cards to be redirected to the specific post page, or they can click on the round button on the bottom right corner of the page to open up a form to create a new post.
 ![HOME PAGE](/read_me/1-home.png)
 
-- TWO
+- If the user clicks on the create a new post button they will be redirected to a form to enter thier form inputs. On the top is the title of the post, then the categories or tags they would like to assign the post, and finally a textarea where they can enter their post content. Hitting the Cancel button will bring the user back to the home page with thier form data not saved. Hitting the Submit button with send the new post to the database and redirect the user back to the home page once the request is complete, witht thier newly added post info card displaying on the home page.
 ![CREATE POST](/read_me/2-new-post.png)
 
 - THREE
