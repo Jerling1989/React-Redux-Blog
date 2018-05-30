@@ -3,7 +3,7 @@ This is a Single-Page Application (SPA) using the MERN stack (MongoDB, Express, 
 
 ---
 
-- ONE
+- When the user first navigates to the application they will be directed to the home page. Here there are display cards for each of the posts on the blog with the title displayed as well as a few preview characters of the post. From this page the user can either click on one of the cards to be redirected to the specific post page, or they can click on the round button on the bottom right corner of the page to open up a form to create a new post.
 ![HOME PAGE](/read_me/1-home.png)
 
 - TWO
