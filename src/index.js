@@ -10,7 +10,6 @@ import reducers from './reducers';
 import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
 import PostsShow from './components/posts_show';
-import Header from './components/header';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 

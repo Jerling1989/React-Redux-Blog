@@ -30,7 +30,7 @@ class PostsShow extends Component {
 		// RETURN
 		return (
 			<div>
-				<Link to="/"><h6>Back to Index</h6></Link>
+				<Link to="/"><h6>Back to Home Page</h6></Link>
 				<button
 					className="btn-floating btn-large waves-effect waves-light red"
 					onClick={this.onDeleteClick.bind(this)}
