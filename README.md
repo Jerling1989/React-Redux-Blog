@@ -10,3 +10,4 @@ This is a Single-Page Application (SPA) using the MERN stack (MongoDB, Express, 
 ![CREATE POST](/read_me/2-new-post.png)
 
 - THREE
+![SINGLE POST](/read_me/3-single-post.png)
