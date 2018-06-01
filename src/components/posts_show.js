@@ -40,7 +40,8 @@ class PostsShow extends Component {
 				<h3 className="center-align">{post.title}</h3>
 				<h5>Categories: {post.categories}</h5>
 				<br />
-				<p>{post.content}</p>
+				<p id="p_wrap">{post.content}</p>
+				<br /><br /><br /><br /><br /><br />
 			</div>
 		);
 	}

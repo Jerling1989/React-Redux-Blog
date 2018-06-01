@@ -10,4 +10,4 @@ This is a Single-Page Application (SPA) using the MERN stack (MongoDB, Express, 
 ![CREATE POST](/read_me/2-new-post.png)
 
 - If the user clicks on one of the posts info cards on the home page they will be redirected to a page with that specific post's content. This includes the post's title, tags, and content. From here the user can either click the link on the top to return to the home page, leaving the post as is, or click the delete post button on the bottom right of the page to remove the post from the blog and then be redirected back to the home page sans post.
-![SINGLE POST](/read_me/3-single-post.png)
+![SINGLE POST](/read_me/3-read-post.png)
